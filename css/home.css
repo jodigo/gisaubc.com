@@ -110,17 +110,11 @@
 */
 
 @media (max-width: 450px){
-  .hometext, .gisautext{
-    width: 0%;
-  }
   .homeBanner{
     font-size: 10px;
   }
   .homeButton{
     left: 50%;
-  }
-  img.gisautext {
-    width: 250px;
   }
   #homeImage.homeImage {
     height: 100vh;
@@ -145,9 +139,6 @@
 @media (max-width: 735px){
   .homeImage{
     height: 80%;
-  }
-  .gisautext img{
-    width: 700px;
   }
   .homeButton {
     width: 15%;
