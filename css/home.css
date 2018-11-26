@@ -52,8 +52,6 @@
   justify-content: center;
 }
 
-
-
 .gisautext {
   width: 40%;
   height: 100%;
@@ -117,8 +115,6 @@
   }
   .homeBanner{
     font-size: 10px;
-    margin-left: -50px;
-    left: 50%;
   }
   .homeButton{
     left: 50%;
@@ -132,15 +128,14 @@
 } 
 @media (max-width: 650px){
   .hometext{
-    width: 700px;
+    width: 100vw;
   }
   .homeBanner {
-    width: 500px;
+    width: 100vw;
   }
   .homeButton{
     width: 200px;
     font-size: 950%;
-    margin-left: 48px;
   }
   .gisautext{
     width: 10%;
