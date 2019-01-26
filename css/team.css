@@ -15,7 +15,7 @@ src: url(font/BLANCH_CONDENSED.otf);
 }
 
 .teamPage {
-    background-image: url('../media/greenbg.jpg');
+    background: #515f49;
     height: auto; 
     background-attachment: fixed;
     background-position: center;
