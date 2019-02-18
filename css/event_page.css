@@ -1,0 +1,222 @@
+/*
+GISAU Color Theme:
+2B425F - Blue
+5C3032 - Maroon
+A62F2F - Red
+C98524 - Ocare
+CC9393 - Peach
+FCEEE6 - Pink
+*/
+
+@font-face {
+font-family: DIN;
+src: url(font/DIN.ttf);
+}
+
+@font-face {
+font-family: BLANCH_CONDENSED;
+src: url(font/BLANCH_CONDENSED.otf);
+}
+
+.upcoming_box {
+	margin: 10px 0px;
+	display: flex;
+	margin-bottom: 20px;
+	flex-direction: column;
+	align-content: center;
+    align-items: center;
+	justify-content: center;
+}
+
+.upcoming_title {
+	color: black;
+	font-size: 150%;
+	margin-top: 37px;
+}
+
+.poster {
+	max-height: 375px;
+	max-width: 500px;
+	background: black;
+}
+
+.upcoming_poster {
+  	display: block;
+  	max-height: 375px;
+  	width: auto;
+  	height: auto;
+}
+
+.calendar_container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-content: center;
+    align-items: center;
+	justify-content: center;
+	background: white;
+	width: 80%;
+	padding: 20px 0px;
+}
+
+.calendar {
+	background-color: white;
+	border-radius: 10%;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+    align-items: center;
+	justify-content: center;
+	color: red;
+}
+
+.date {
+	font-size: 190%;
+	color: black;
+}
+
+.description {
+	padding: 20px 20px;
+    text-align: left;
+    display: none;
+}
+
+.event_info {
+	height: 80px;
+	width: 100%;
+	color: grey;
+	padding: 5px 20px;
+	text-align: left;
+}
+
+.name {
+	color: black;
+	font-size: 130%;
+}
+
+.rantangan {
+    background: url("../media/redbg.jpg");
+    align-items: center;
+    justify-content: center;
+}
+
+.rantanganBox{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	content: "";
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rantanganIcon{
+	width: 300px;
+	height: auto;
+	margin: 10px 10px;
+	align-self: center;
+	border-radius: 100%;
+	border: solid 4px white;
+	transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rantanganText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.rantanganText h2 {
+	color: white !important;
+	letter-spacing: 3px;
+	padding: 5px;
+	position:relative;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.rantanganContainer {
+  padding: 10px;
+  position: relative;
+  border-radius: 100%;
+  float: left;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+}
+
+.rantanganOverlay {
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 25px;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d05454;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  border: solid 4px white;
+}
+
+.rantanganContainer:hover .rantanganOverlay {
+  opacity: 1;
+}
+
+.rantangan_title h1 {
+	color: #D3D3D3 !important;
+	letter-spacing: 3px;
+	padding: 5px;
+	position:relative;
+	top: 13px;
+}
+
+@media (min-width: 380px){
+	.upcoming_box {
+		flex-direction: row;
+		align-items: flex-start;
+		background: url("../media/redbg.jpg");
+		margin: 0px 0px;
+		padding-bottom: 20px;
+	}
+	.upcoming_title {
+		background: url("../media/redbg.jpg");
+		padding: 1px 0px;
+		margin-top: 31px;
+	}
+	.upcoming_title h1 {
+		color: #D3D3D3 !important;
+		letter-spacing: 3px;
+	}
+	.calendar_container {
+		flex-direction: column;
+		height: 375px;
+		background-color: #D3D3D3;
+		align-items: flex-start;
+		width: 60%;
+	}
+	.calendar {
+		display: none;
+	}
+	.description {
+		display: block;
+		max-width: 500px;
+	}
+}
