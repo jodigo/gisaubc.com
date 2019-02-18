@@ -12,17 +12,14 @@ src: url(font/BLANCH_CONDENSED.otf);
 	width: 80vw;
 	height: auto;
 	margin-top: 40px;
+	align-items: center;
+	justify-content: center;
 }
 
 .teamPage {
     background: #515f49;
-    height: auto; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    padding-bottom: 20px;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
 .pageTitle {
@@ -32,86 +29,180 @@ src: url(font/BLANCH_CONDENSED.otf);
 	font-family: BLANCH_CONDENSED;
 	font-size: 63px;
     max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.teamContainer {
+.container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 0px 20px;
-	
 	padding: 10px 10px;
-	
-	border: dashed black 2px;
 	background: cornsilk;
-        max-width: 1240px;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    clear: both;
+    display: flex;
 }
 
 .teamBox{
-	/*border: solid maroon 1px;*/
-	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	float: left;
+    padding: 5px;
+    width: 25%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.teamBox1{
+	padding-top: 10px;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	float: left;
+    padding: 5px;
+    height: 353.66px;
+    width: 25%;
 }
 
 .teamTitle{
-	padding: 10px 10px;
-	padding-bottom: 1px;
-	display: flex;
+	padding: 20px 10px;
+	display: block;
 	text-align: center;
 	justify-content: center;
-	width: 85%;
+	width: 219.2px;
+	height: 66.8px;
 	background: #515f49;
 	color: white;
 	font-family: DIN;
 	font-size: 16px;
+	vertical-align: middle;
+}
+
+.teamTitle2{
+	padding: 20px 10px;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	width: 219.2px;
+	height: 66.8px;
+	background: #515f49;
+	color: white;
+	font-family: DIN;
+	font-size: 16px;
+	vertical-align: middle;
+	position: relative;
+	top: 28px;
+}
+
+.teamTitle1{
+	padding: 10px 10px;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	width: 219.2px;
+	height: 66.8px;
+	background: #515f49;
+	color: white;
+	font-family: DIN;
+	font-size: 16px;
+	vertical-align: middle;
 }
 
 .teamText {
 	border: solid cornsilk 1px;
-	display:flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-family: Helvetica, sans-serif;
 	padding: 10px;
 }
 
-.teamPic {
-	height: auto;
-	width: 180px;
-	z-index: 1;
-	border: solid 1px black;
+.teamText1 {
+	border: solid cornsilk 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Helvetica, sans-serif;
+	padding: 10px;
 	position: relative;
+    top: 28px;
+}
+
+.teamPic {
+    position: relative;
+    float: left;
+    padding: 5px;
+    width: 180px;
+    border: solid black 1.5px;
+}
+
+.teamPic1 {
+    position: relative;
+    float: left;
+    padding: 5px;
+    height: 180px;
+    width: 235.85px;
+    transform: rotate(90deg);
+    border: solid black 1.5px;
 }
 
 .portrait {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .portraitgif {
-	width: 180px;
-	height: auto;
+    width: 167.18px;
+    height: 222.85px;
+}
+
+.portraitgif1 {
+    width: 167.18px;
+    height: 222.85px;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
+  top: 5px;
   bottom: 0;
-  left: 0;
+  left: 5px;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 222.85px;
+  width: 167.18px;
   opacity: 0;
   transition: 1s ease;
   color: white;
 }
 
+.overlay1 {
+  position: absolute;
+  top: -23px;
+  bottom: 0;
+  left: 33px;
+  right: 0;
+  height: 222.85px;
+  width: 167.18px;
+  opacity: 0;
+  transition: 1s ease;
+  color: white;
+  transform: rotate(270deg);
+}
+
 .teamPic:hover .overlay {
+  opacity: 1;
+}
+
+.teamPic1:hover .overlay1 {
   opacity: 1;
 }
 
@@ -124,19 +215,65 @@ src: url(font/BLANCH_CONDENSED.otf);
 }
 
 @media (max-width: 550px){
-.teamPic, .portrait, .portraitgif, .overlay {
+.teamPic, .portrait, .portraitgif, .overlay, {
 	width: 200px;
 	height: auto;
 }
-.teamTitle{
+
+.portraitgif1 {
+    width: 166.39px;
+    height: 221.85px;
+    bottom: 56px;
+    right: 21px;
+    position: relative;
+}
+
+.teamPic1 {
+    width: 234.86px;
+    height: auto;
+}
+
+.overlay1 {
+    bottom: 20px;
+    width: 234.86px;
+    height: auto;
+}
+
+.teamBox {
+    width: 250px;
+    height: auto;
+}
+
+.teamBox1 {
+    width: 250px;
+    height: 333.66px;
+}
+
+.teamTitle {
 	font-size: 14px;
 	height: 50px;
 	top: 10px;
-	}
-.teamText{
+}
+
+.teamTitle1 {
+    font-size: 14px;
+	height: 50px;
+    top: 28px;
+}
+
+.teamTitle2 {
+    font-size: 14px;
+	height: 50px;
+    top: 27.5px;
+}
+
+
+.teamText, .teamText1{
 	font-size: 12px;
 }
-.teamPageTitle{
-	opacity: 0;
+
+.teamPageTitle {
+    width: 300px;
+    height: auto;
 }
 
